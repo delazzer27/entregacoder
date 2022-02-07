@@ -12,12 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="gridArea3">
-    <header class="menuFlex gridMenu">
+    <header class="menuFlex gridMenu animate__animated animate__fadeInLeft">
         <section id="logo">
-            <img src="../img/icono.jpeg" alt="Icono de Arte x cele" width="70px" height="70px" class="marca">
+            <a href="../index2.html"><img src="../img/icono.jpeg" alt="Icono de Arte x cele" width="70px" height="70px" class="marca"></a>
             <h1 class="titulo">Arte x cele</h1> 
         </section>
         <nav>
@@ -27,7 +29,6 @@
                 <li> <a href="productos.html" target="_blank" class="blanco sinSubrayado">Productos</a></li>
                 <li> <a href="clases.html" target="_blank" class="blanco sinSubrayado">Clases</a></li>
                 <li> <a href="contacto.html" target="_blank" class="blanco sinSubrayado">Contacto</a></li>
-            <!-- Si pongo en href con./ no me toma los archivos. Cuando lo pruebo no me lo redirecciona correctamente. Con los ../ si me lo hace. No sabría como solucionarlo -->
             </ul>
         </nav>
         <section class="posicion" id="sesion">
@@ -39,17 +40,17 @@
     </header>
     
     <section id="madera" class="centrado">
-        <h2>Cuadros tallados en Madera</h2>
-        <img src="../img/rodri.jpeg" alt="Cuadro tallado en madera" width="350px" height="400px" class="fotos">
-        <img src="../img/Naruto (1).jpeg" alt="Cuadro tallado en madera 2" width="350px" height="400px" class="fotos">
+        <h2 class="animate__animated animate__fadeInLeft">Cuadros tallados en Madera</h2>
+        <img src="../img/rodri.jpeg" alt="Cuadro tallado en madera" width="350px" height="400px" class="fotos fade">
+        <img src="../img/Naruto (1).jpeg" alt="Cuadro tallado en madera 2" width="350px" height="400px" class="fotos fade">
         <input type="submit" value="Ver más" class="boton">
     </section>
-    <section id="pintado" class="centrado">
+    <section id="pintado" class="centrado" data-aos="fade-down">
         <h2 class="espacio">Cuadros pintados</h2>
         <img src="../img/bojack.jpeg" alt="Cuadro pintado" width="400px" height="400px" class="fotos">
         <input type="submit" value="Ver más" class="boton2">
      </section>
-     <section id="dibujos" class="centrado">
+     <section id="dibujos" class="centrado" data-aos="fade-down">
         <h2 class="espacio">Dibujos</h2>
         <img src="../img/dibujo.jpeg" alt="Dibujo en base a una foto" width="400px" height="400px" class="fotos">
         <input type="submit" value="Ver más" class="boton2">
@@ -59,6 +60,10 @@
     <footer>
         &copy;Copyright 2022 | Todos los derechos reservados
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="menuFlex gridMenu">
+    <header class="menuFlex gridMenu animate__animated animate__fadeInLeft">
         <section id="logo">
-            <img src="../img/icono.jpeg" alt="Icono de Arte x cele" width="70px" height="70px" class="marca">
+            <a href="../index2.html"><img src="../img/icono.jpeg" alt="Icono de Arte x cele" width="70px" height="70px" class="marca"></a>
             <h1 class="titulo">Arte x cele</h1> 
         </section>
 <nav>
@@ -25,7 +27,6 @@
     <li> <a href="productos.html" target="_blank" class="blanco sinSubrayado">Productos</a></li>
     <li> <a href="clases.html" target="_blank" class="blanco sinSubrayado">Clases</a></li>
     <li> <a href="contacto.html" target="_blank" class="blanco sinSubrayado">Contacto</a></li>
-<!-- Si pongo en href con./ no me toma los archivos. Cuando lo pruebo no me lo redirecciona correctamente. Con los ../ si me lo hace. No sabría como solucionarlo -->
 </ul>
 </nav>
 <section class="posicion" id="sesion">
@@ -35,7 +36,7 @@
     <p class="iconos">Iniciar sesión</p>    
 </section>
 </header>
-    <main>
+    <main class="fade">
         <form action="">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" class="formulario">
@@ -51,8 +52,12 @@
 
     </main>
 
-    <footer>
+    <footer class="animate__animated animate__fadeInLeft">
         &copy;Copyright 2022 | Todos los derechos reservados
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

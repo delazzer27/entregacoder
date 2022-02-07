@@ -12,12 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="gridArea">
-    <header class="menuFlex gridMenu">
+    <header class="menuFlex gridMenu animate__animated animate__fadeInLeft">
         <section id="logo">
-            <img src="./img/icono.jpeg" alt="Icono de Arte x cele" width="70px" height="70px" class="marca">
+            <a href="./index2.html"><img src="./img/icono.jpeg" alt="Icono de Arte x cele" width="70px" height="70px" class="marca"></a>
             <h1 class="titulo">Arte x Cele</h1>
         </section>
         <nav>
@@ -27,7 +29,6 @@
                 <li> <a href="./assets/productos.html" target="_blank" class="blanco sinSubrayado">Productos</a></li>
                 <li> <a href="./assets/clases.html" target="_blank" class="blanco sinSubrayado">Clases</a></li>
                 <li> <a href="./assets/contacto.html" target="_blank" class="blanco sinSubrayado">Contacto</a></li>
-            <!-- Si pongo en href con./ no me toma los archivos. Cuando lo pruebo no me lo redirecciona correctamente. Con los ../ si me lo hace. No sabría como solucionarlo -->
             </ul>
         </nav>
         <section class="posicion" id="sesion">
@@ -36,35 +37,39 @@
             <img src="./img/sesion.png" alt="iniciar sesion" width="15px" height="15px" class="iconos">
             <p class="iconos">Iniciar sesión</p>
         </section>
-        <!-- No se como achicar las imagenes sin las propiedades Widht y height. Si lo hago desde photoshop pierden calidad y si lo hago desde alguna pagina no queda en la medida que yo quiero -->
+        <!-- Las imagenes las achique con photoshop y la pag que me pasaste, para que pesen lo menos posible, y despues las achique con widht y height, porque si lo hacia con Photoshop me bajaba la calidad -->
     </header>
     <section id="productos" class="centrado">
-        <h2>Cuadros destacados</h2>
-        <img src="./img/madera.jpeg" alt="Cuadro de madera 1" class="fotos tamaño">
-        <img src="./img/starwars.jpeg" alt="Cuadro de madera 2" class="fotos tamaño">
-        <img src="./img/bojack.jpeg" alt="Cuadro de madera 3" class="fotos tamaño">
-        <p class="espacioAbajo">Para ver más productos hace click en <span> <a href="./assets/productos.html" target="_blank" class="sinSubrayado"> productos</a></span></p>
+        <h2 class="animate__animated animate__fadeInLeft">Cuadros destacados</h2>
+        <img src="./img/madera.jpeg" alt="Cuadro de madera 1" class="fotos tamaño fade">
+        <img src="./img/starwars.jpeg" alt="Cuadro de madera 2" class="fotos tamaño fade">
+        <img src="./img/bojack.jpeg" alt="Cuadro de madera 3" class="fotos tamaño fade fade2">
+        <p class="espacioAbajo fade">Para ver más productos hace click en <span> <a href="./assets/productos.html" target="_blank" class="sinSubrayado"> productos</a></span></p>
     </section>
 
     <section id="coment" class="centrado">
-        <h2 class="espacio">Comentarios de clientes</h2>
-        <img src="./img comprim/ClPerritos.jpg" alt="Foto de Cliente 1" width="220px" height="320px" class="fotos">
-        <img src="./img comprim/ClAstronauta.jpg" alt="Foto de Cliente 2" width="220px" height="320px" class="fotos">
+        <h2 class="espacio animate__animated animate__fadeInLeft">Comentarios de clientes</h2>
+        <img data-aos="fade-down" src="./img comprim/ClPerritos.jpg" alt="Foto de Cliente 1" width="220px" height="320px" class="fotos zoom">
+        <img data-aos="fade-down" src="./img comprim/ClAstronauta.jpg" alt="Foto de Cliente 2" width="220px" height="320px" class="fotos zoom">
         
      </section>
 
     <section id="promo">
         <aside class="centrado">
-            <h2 class="espacio"> Promociones</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem minus magni. Ab eum, molestiae facere doloremque tenetur nesciunt repellat est iure nobis placeat libero vel fuga. Laudantium, eligendi adipisci!
+            <h2 class="espacio animate__animated animate__fadeInLeft"> Promociones</h2>
+            <p data-aos="fade-down">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem minus magni. Ab eum, molestiae facere doloremque tenetur nesciunt repellat est iure nobis placeat libero vel fuga. Laudantium, eligendi adipisci!
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo blanditiis sunt vitae iure magnam ea quibusdam eaque molestias tenetur, laborum itaque repellendus! Nihil a, ipsam omnis voluptates libero eaque mollitia?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam unde ut, labore neque facere quas iste! Facere eaque impedit accusamus ducimus saepe? Excepturi quas sequi necessitatibus. At, sequi tempora?
             </p>
         </aside>
     </section>
     <footer>
-        &copy;Copyright 2022 | Todos los derechos reservados
+        &copy;Copyright 2022, desarrollado por Tomás A. De Lazzer| Todos los derechos reservados
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
